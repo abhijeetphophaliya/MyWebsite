@@ -1,0 +1,314 @@
+/* base rules */
+
+:root {
+  box-sizing: border-box;
+  --blue-color: #5c84ec;
+  --pink-color: #f03c6d;
+  --paragraph-color: #707070;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(var(--blue-color),var(--pink-color));
+  border-radius: 20px;
+}
+
+
+#particles-js{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(216, 207, 207, 0.1);
+  position: absolute;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6c757d;
+}
+
+.r-p {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+body {
+  background: black;
+}
+.bg-sec-about {
+  background: #d1d2d3;
+}
+
+.bg-sec-exp {
+  background: #f8f9fa;
+}
+
+.bg-sec-services {
+  background: #eff5fa;
+}
+
+.r-btn {
+  padding: 5px 20px;
+  background-color: #ee8683 !important;
+  color: white !important;
+}
+
+/* navigation */
+
+nav.stickyadd .active{
+  border-bottom: 2px solid rgba(0, 0, 0, 7);
+}
+
+nav.r-nav {
+  background: transparent;
+  padding: 20px 0px;
+  transition: 0.5s all;
+}
+
+nav .navbar-brand {
+  font-size: 30px;
+  color: #fff;
+}
+
+nav .navbar-nav li a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+
+nav .navbar-nav li {
+  margin-left: 15px;
+}
+
+
+
+nav.r-nav.stickyadd {
+  background: #fff;
+  padding: 15px 0px;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.5s all ease-in-out;
+}
+
+nav.stickyadd .navbar-brand {
+  color: black;
+  font-size: 40px;
+  transition: 0.5s all;
+}
+
+nav.stickyadd .navbar-nav .nav-link {
+  color: black !important;
+}
+
+.navbar .hamburger {
+  color: #fff !important;
+}
+
+nav.stickyadd .hamburger {
+  color: black !important;
+}
+
+/* Header Section */
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/pic9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box {
+  max-width: 700px;
+  color: #fff;
+}
+
+.content-box h4 {
+  font-size: 30px;
+}
+
+.content-box h1 {
+  font-size: 52px;
+}
+
+.content-box a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 5px 25px;
+  font-weight: bold;
+}
+
+.content-box a:hover {
+  color: black;
+  background: white;
+  transition: 2s all;
+}
+
+.content-box p {
+  color: #fff;
+}
+
+/* About Us */
+
+.about li a {
+  color: black;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  font-size: 20px;
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
+  line-height: 40px;
+  transform: 0.5s all;
+  text-align: center;
+}
+
+.about li a:hover {
+  color: #ee8486;
+}
+
+/* Experience */
+
+.exp-class .progress {
+  height: 20px;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.exp-class .progress-bar {
+  background-color: #ee8683 !important;
+}
+
+.exp-class label {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* Services */
+
+.card,
+.card-header {
+  background: #f8f9fa !important;
+}
+.card-header {
+  border: none !important;
+}
+
+.services-class .card-header i {
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.service-border {
+  height: 2px;
+  width: 40px;
+  margin: 15px auto;
+  background: #e65f78;
+}
+
+
+/* Team */
+
+
+
+.team-class  .box{
+  position: relative;
+  z-index: 1;
+}
+
+.team-class .bg-white{
+  background: #fff;
+}
+
+.team-class .team-content{
+  padding: 15px;
+}
+
+.team-class .box::before{
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: -7%;
+  position: absolute;
+  left: -7%;
+  z-index: -1;
+  background: linear-gradient(135deg,var(--blue-color),var(--pink-color));
+}
+
+.contact-content .form-group{
+  margin-bottom: 20px;
+}
+
+/* Contact */
+
+
+
+.contact-class form{
+  background-color: #fff;
+  padding: 50px;
+}
+
+
+.contact-class .contact-address{
+  background: linear-gradient(135deg,var(--blue-color),var(--pink-color));
+  padding: 50px;
+  color: white;
+}
+
+.contact-class .contact-address p{
+ margin: 20px 0;
+  color: white;
+}
+
+
+.contact-class .contact-address i {
+  font-size: 20px;
+  padding-top: 10px;
+  color: white;
+}
+
+/* Footer */
+
+footer{
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: lightgrey
+}
+
+footer p{
+  color: white;
+}
